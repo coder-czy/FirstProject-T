@@ -1,0 +1,244 @@
+$bgcolor: #a9b910;
+.goods-cover {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 48px;
+    background-color: rgba(66, 66, 66, .5);
+    z-index: 11;
+    .goods-detail {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 27px;
+        right: 18px;
+        left: 18px;
+        bottom: 28px;
+        background-color: #fefefe;
+        border-radius: 8px;
+        overflow: hidden;
+        .detail-top {
+            flex-basis: 160px;
+            padding: 20px;
+            position: relative;
+            .detail-img {
+                height: 120px;
+                text-align: center;
+                border-radius: 4px;
+                overflow: hidden;
+                img {
+                    height: 100%;
+                }
+            }
+            .collect {
+                display: inline-block;
+                position: absolute;
+                top: 15px;
+                right: 50px;
+                width: 30px;
+                height: 30px;
+                background: url('../../assets/images/menu/share-good.png') center center no-repeat;
+                background-size: 150%;
+            }
+            .close {
+                display: inline-block;
+                position: absolute;
+                top: 15px;
+                right: 10px;
+                width: 30px;
+                height: 30px;
+                background: url('../../assets/images/menu/close.png') center center no-repeat;
+                background-size: 150%;
+            }
+        }
+        .detail-center {
+            flex: 1;
+            padding: 10px;
+            overflow: hidden;
+            .food-name {
+                font-size: 16px;
+                color: #717475;
+                line-height: 30px;
+            }
+            .food-content {
+                font-size: 14px;
+                line-height: 20px;
+                color: #6f7275;
+                margin-bottom: 18px;
+            }
+            .detail-property {
+                padding: 10px 0;
+                .property-item {
+                    margin-bottom: 24px;
+                    .property-name {
+                        font-size: 14px;
+                        color: #686869;
+                        margin-bottom: 12px;
+                        .detail-desc {
+                            font-size: 12px;
+                            color: $bgcolor;
+                        }
+                    }
+                    .property-val {
+                        display: inline-block;
+                        padding: 10px 14px;
+                        font-size: 14px;
+                        font-weight: 200;
+                        color: #aaaaaa;
+                        background-color: #f8f8f8;
+                        margin-right: 7px;
+                        border-radius: 4px;
+                        &.active {
+                            background-color: $bgcolor;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .detail-bottom {
+            flex-basis: 98px;
+            .select-content {
+                height: 60px;
+                background-color: #f9f9f9;
+                display: flex;
+                padding: 0 12px;
+                .content-left {
+                    flex: 1;
+                    .food-price {
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: #000;
+                        line-height: 36px;
+                    }
+                    .select-property {
+                        font-size: 12px;
+                        color: #a1a1a1;
+                        width: 50vw;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                }
+                .content-right {
+                    flex-basis: 70px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .add-shopcart {
+                height: 38px;
+                background-color: $bgcolor;
+                font-size: 18px;
+                line-height: 38px;
+                text-align: center;
+                color: #fff;
+            }
+            .sell-out {
+                background-color: #d4dc88;
+            }
+        }
+    }
+    .no-property {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        right: 22px;
+        left: 22px;
+        bottom: 120px;
+        background-color: #fefefe;
+        border-radius: 8px;
+        overflow: hidden;
+        .detail-top {
+            flex-basis: 160px;
+            padding: 20px;
+            position: relative;
+            .detail-img {
+                height: 120px;
+                text-align: center;
+                border-radius: 4px;
+                overflow: hidden;
+                img {
+                    height: 100%;
+                }
+            }
+            .collect {
+                display: inline-block;
+                position: absolute;
+                top: 15px;
+                right: 50px;
+                width: 30px;
+                height: 30px;
+                background: url('../../assets/images/menu/share-good.png') center center no-repeat;
+                background-size: 150%;
+            }
+            .close {
+                display: inline-block;
+                position: absolute;
+                top: 15px;
+                right: 10px;
+                width: 30px;
+                height: 30px;
+                background: url('../../assets/images/menu/close.png') center center no-repeat;
+                background-size: 150%;
+            }
+        }
+        .detail-center {
+            flex: 1;
+            padding: 10px;
+            max-height: 122px;
+            overflow: hidden;
+            .food-name {
+                font-size: 16px;
+                color: #717475;
+                line-height: 30px;
+            }
+            .food-content {
+                font-size: 14px;
+                line-height: 20px;
+                color: #6f7275;
+            }
+        }
+        .detail-bottom {
+            flex-basis: 98px;
+            .select-content {
+                height: 60px;
+                background-color: #f9f9f9;
+                display: flex;
+                padding: 0 12px;
+                .content-left {
+                    flex: 1;
+                    .food-price {
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: #000;
+                        line-height: 60px;
+                    }
+                    .select-property {
+                        font-size: 12px;
+                        color: #a1a1a1;
+                        width: 50vw;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                }
+                .content-right {
+                    flex-basis: 70px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .add-shopcart {
+                height: 38px;
+                background-color: $bgcolor;
+                font-size: 18px;
+                line-height: 38px;
+                text-align: center;
+                color: #fff;
+            }
+        }
+    }
+}
